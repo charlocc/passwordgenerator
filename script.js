@@ -9,6 +9,9 @@ function writePassword() {
 
 }
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
@@ -46,44 +49,34 @@ function generatePassword() {
     if (special){
       finalArray = finalArray.concat(specialCharacter);
     }
-  // User must choose at least two specifications
+  // Specify that user must choose at least two specifications
     if (!lower && !upper && !numbers && !special){
-      alert("Must select at least two specifications for the password (example: upper and lower case letters allowed")
+      alert("Please select at least two specifications for the password (example: upper and lower case letters allowed)")
       generatePassword();    
     } 
     if (lower && !upper && !numbers && !special){
-      alert("Must select at least two specifications for the password (example: upper and lower case letters allowed")
+      alert("Please select at least two specifications for the password (example: upper and lower case letters allowed)")
       generatePassword();  
     } 
     if (!lower && upper && !numbers && !special){
-      alert("Must select at least two specifications for the password (example: upper and lower case letters allowed")
+      alert("Please select at least two specifications for the password (example: upper and lower case letters allowed)")
       generatePassword();
     }  
     if (!lower && !upper && numbers && !special){
-      alert("Must select at least two specifications for the password (example: upper and lower case letters allowed")
+      alert("Please select at least two specifications for the password (example: upper and lower case letters allowed)")
       generatePassword();
     } 
     if (!lower && !upper && !numbers && special){
-      alert("Must select at least two specifications for the password (example: upper and lower case letters allowed")
+      alert("Please select at least two specifications for the password (example: upper and lower case letters allowed)")
       generatePassword();
     }
-  // return string
+
+    var string = "";
+    for (var i = 0; i < length; i++) {
+      string = string + finalArray[Math.floor(Math.random()*finalArray.length)];
+    }
+    // var finalString = Math.random(string);
+    // console.log(finalString);
+    console.log(string);
+  return string
 }
-
-
-
-// use a for loop index with the number for finalArray
-
-
-
-// for (var i = length; i < 5; i++) {
-  // This is the block of code that will run each time
-//   console.log("This is the current value of i: " + i + ".");
-
-
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-
-
