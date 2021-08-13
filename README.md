@@ -13,11 +13,11 @@
 
 
 ```
-To use the start the process of generating a random password, click the red "generate password" button! 
+To start the process of generating a random password, click the red "generate password" button! 
 You will then be presented with a series of prompts for password criteria.
-You can input how many characters you woudl like the password to be 
+You can input how many characters you would like the password to be 
 (it has to be at least 8 characters, and no more than 128)
-You can then include if youd like the password to include: 
+You can then input if youd like the password to include: 
 * uppercase letters, 
 * lowercase letters, 
 * numbers, 
