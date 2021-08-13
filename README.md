@@ -22,8 +22,8 @@ You can then input if youd like the password to include:
 * lowercase letters, 
 * numbers, 
 * and/or special characters 
-(you must select to include at least two of these specifications).
-Once you have answered all of the prompts, a brand new random password will be generated that matches the criteria you input! 
+(you must select at least one of these specifications).
+Once you have answered all of the prompts, a password will be generated that matches the criteria you input! 
 
 ```
 
